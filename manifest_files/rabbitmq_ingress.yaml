@@ -8,7 +8,7 @@ metadata:
   namespace: rabbitmq
 spec:
   rules:
-  - host: rabbitmq.example.az
+  - host: rabbitmq.example.com
     http:
       paths:
       - backend:
