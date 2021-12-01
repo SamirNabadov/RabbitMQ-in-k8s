@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: __ingress_class__
+    kubernetes.io/rewrite-target: /
+  name: __rabbitmq_name__
+  namespace: __rabbitmq_namespace__
+spec:
+  rules:
+  - host: __ingress_host__
+    http:
+      paths:
+      - backend:
+          serviceName: __rabbitmq_name__
+          servicePort: 15672
+        path: /

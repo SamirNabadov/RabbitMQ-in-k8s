@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/rewrite-target: /
+  name: rabbitmq
+  namespace: rabbitmq
+spec:
+  rules:
+  - host: rabbitmq.example.az
+    http:
+      paths:
+      - backend:
+          serviceName: rabbitmq
+          servicePort: 15672
+        path: /

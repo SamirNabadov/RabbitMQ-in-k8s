@@ -1,0 +1,23 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: __rabbitmq_name__
+  namespace: __rabbitmq_namespace__
+spec:
+  replicas: __replica_count__
+  resources:
+    requests:
+      cpu: __requests_cpu__
+      memory: __requests_memory__
+    limits:
+      cpu: __limits_cpu__
+      memory: __limits_memory__
+  rabbitmq:
+          additionalConfig: |
+                  log.console.level = info
+                  channel_max = __channel_max__
+                  default_user= __admin_user__
+                  default_pass = __admin_pass__
+                  default_user_tags.administrator = true
+  service:
+    type: ClusterIP
