@@ -4,7 +4,7 @@ __RabbitMQ in Kubernetes Environment__
 RabbiMQ installation and configuration based Python script in Kubernetes environment
 
 
-__Configured__
+__Configured software__
 ------------
 * RabbitMQ 3.8.21
 
