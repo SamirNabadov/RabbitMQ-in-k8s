@@ -36,8 +36,8 @@ def replace_word(infile,old_word,new_word):
 def deploy():
     print("Deploying RabbitMQ!")
     print("-------------------------------")
+         
     current_dir = os.getcwd()
-
     manifest_files = glob.glob(f"{current_dir}/*.yaml")
     replaced_folder = f"{current_dir}/manifest_files"
 
