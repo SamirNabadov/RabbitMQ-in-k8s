@@ -12,6 +12,7 @@ requests_memory = "2Gi"
 limits_memory = "4Gi"
 channel_max = "2000"
 ingress_class = "nginx"
+ingress_namespace = "nginx"
 ingress_host = "rabbitmq.example.com"
 
 admin = {"username": "admin",
@@ -65,6 +66,7 @@ def deploy():
                 replace_word(manifest_file, '__channel_max__', channel_max)
                 replace_word(manifest_file, '__ingress_class__', ingress_class)
                 replace_word(manifest_file, '__ingress_host__', ingress_host)
+                replace_word(manifest_file, '__ingress_namespace__', ingress_namespace)
                 replace_word(manifest_file, '__admin_user__', admin["username"])
                 replace_word(manifest_file, '__admin_pass__', admin["password"])
                 list_files.append(f"{replaced_folder}/{file}")
