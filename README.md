@@ -16,6 +16,9 @@ __Basic settings__
 * Created vhost and users, configured permissions
 * Configured HA policy
 
+__Note__
+------------
+* Nginx Ingress daemonset settings should have this argument: - --tcp-services-configmap=$(POD_NAMESPACE)/tcp-services
 
 __Requirements__
 ------------
