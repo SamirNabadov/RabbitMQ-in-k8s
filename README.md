@@ -19,7 +19,7 @@ __Basic settings__
 __Note__
 ------------
 * In the daemonset of Nginx Ingress settings should have this argument: - --tcp-services-configmap=$(POD_NAMESPACE)/tcp-services
-* In the service of Nginx Ingress must be exposed required tcp socket
+* In the service of Nginx Ingress must be exposed required tcp socket (AMPQ 5672)
 
 __Requirements__
 ------------
