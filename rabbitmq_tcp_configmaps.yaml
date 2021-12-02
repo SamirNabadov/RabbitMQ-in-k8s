@@ -4,6 +4,6 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: __ingress_class__
   name: tcp-services
-  namespace: ingress-external
+  namespace: __ingress_namespace__
 data:
   5672: __rabbitmq__namespace__/rabbitmq:5672
