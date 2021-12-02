@@ -18,7 +18,8 @@ __Basic settings__
 
 __Note__
 ------------
-* Nginx Ingress daemonset settings should have this argument: - --tcp-services-configmap=$(POD_NAMESPACE)/tcp-services
+* In the daemonset of Nginx Ingress settings should have this argument: - --tcp-services-configmap=$(POD_NAMESPACE)/tcp-services
+* In the service of Nginx Ingress must be exposed required tcp socket
 
 __Requirements__
 ------------
