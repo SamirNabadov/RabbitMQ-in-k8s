@@ -22,7 +22,7 @@ users = {"vhost01": ["user01","password01"],
          "vhost02": ["user02","password02"],
          "vhost03": ["user03","password03"]}
 
-tags = "monitoring, management"
+tags = "monitoring management"
 
 def replace_word(infile,old_word,new_word):
     if not os.path.isfile(infile):
