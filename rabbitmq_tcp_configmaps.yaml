@@ -6,4 +6,4 @@ metadata:
   name: tcp-services
   namespace: __ingress_namespace__
 data:
-  5672: __rabbitmq__namespace__/__rabbitmq_name__:5672
+  5672: __rabbitmq_namespace__/__rabbitmq_name__:5672
