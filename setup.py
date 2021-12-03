@@ -12,7 +12,7 @@ requests_memory = "2Gi"
 limits_memory = "4Gi"
 channel_max = "2000"
 ingress_class = "nginx"
-ingress_namespace = "nginx"
+ingress_namespace = "ingress-external"
 ingress_host = "rabbitmq.example.com"
 
 admin = {"username": "admin",
